@@ -1,11 +1,19 @@
 program matrix_do
-    implicit none
-    integer,dimension(3,3)::a
-    integer::i,j
-    print*,"Enter the 3x3 matrix column wise"
-    read*,((a(i,j),i=1,3),j=1,3)
-    print*, "The 3x3 matrix is"
-    do i=1,3 
-      Print *, (a(i,j),j=1,3)   
-    end do
-end program matrix_do
+  implicit none
+  integer ::m,n
+  integer, allocatable :: a(:,:)
+  integer :: i, j
+  print *, "Enter the value of m and n:"
+  read *,m,n
+  allocate(a(m,n))
+  print *, "Enter the matrix elements column wise (use enter key for entering every element. Don't use space to enter elements)"
+  do j = 1,n
+      do i = 1,m
+          read *, a(i, j)
+      end do
+  end do
+  print *, "The matrix is"
+  do i = 1,m
+      print *, (a(i, j), j = 1,n)
+  end do
+end program

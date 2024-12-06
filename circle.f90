@@ -1,5 +1,5 @@
 program circle
- implicit none
+    implicit none
     real::pi,radius,perimeter,area
     print*,"Enter the value of radius"
     read*,radius
@@ -9,8 +9,7 @@ program circle
         area=pi*radius**2
         print*,"The perimeter is =",perimeter
         print*,"The area is =",area
-
-        else
+     else
         print*,"Does not form a circle"
     end if
 

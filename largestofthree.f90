@@ -6,13 +6,12 @@ program largest
     if ( a>b ) then
         if ( a>c ) then
             print*,"largest is a=",a
-            else
+         else
             print*,"largest is c=",c
         end if
     else if ( b>c ) then
         print*,"largest is b =",b
     else
-    print*,"largest is c=",c
-    
+    print*,"largest is c=",c 
     end if
 end program

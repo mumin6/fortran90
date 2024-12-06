@@ -6,4 +6,4 @@ program natural_number
     do i =1, n
         print*,i        
     end do
-    end program
+end program
