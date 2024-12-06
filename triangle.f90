@@ -10,8 +10,7 @@ program triangle
     print*,"The perimeter is =",perimeter
     print*,"The area is =",area
  else
-    print*,"Does not form a triangle"
-       
+    print*,"Does not form a triangle"     
  end if
 end program
 

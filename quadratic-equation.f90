@@ -1,6 +1,6 @@
 program quadratic_equation
     implicit none
-    real::a,b,c,D,realpart,imaginary,x,x1,x2
+    real::a,b,c,D,real_part,imaginary_part,x,x1,x2
     print*,"Enter the value of a,b and c"
     read*,a,b,c
     D=b**2-4*a*c
@@ -18,10 +18,10 @@ program quadratic_equation
             print*,"x1=",x1
             print*,"x2=",x2
             else
-            realpart=-b/2.0*a
-            imaginary=sqrt(abs(D))/(2.0*a)
-            print*,"x1=",realpart,"+",imaginary,"i"
-            print*,"x1=",realpart,"-",imaginary,"i"
+            real_part=-b/2.0*a
+            imaginary_part=sqrt(abs(D))/(2.0*a)
+            print*,"x1=",real_part,"+",imaginary_part,"i"
+            print*,"x1=",real_part,"-",imaginary_part,"i"
     
         end if
     else
