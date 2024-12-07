@@ -2,7 +2,7 @@ program sum_of_matrix
     implicit none
     integer,allocatable,dimension(:,:)::a,b,c
     integer::m,n,i,j
-    print*,"Enter the value of m and n"
+    print*,"Enter the value of m and n (order of matrix)"
     read*,m,n
     allocate(a(m,n),b(m,n),c(m,n))
     print*,"Enter the matrix a column wise"
@@ -18,4 +18,4 @@ program sum_of_matrix
     do i = 1, m
         print*,(c(i,j),j=1,n)
     end do
-end program sum_of_matrix
+end program
