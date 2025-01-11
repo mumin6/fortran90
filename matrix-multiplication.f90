@@ -2,9 +2,9 @@ program matrix_multiplication
     implicit none
     integer :: rowsa, colsa, rowsb, colsb, i, j, k
     real,allocatable,dimension(:,:)::a,b,c
-    print *, "Enter the order of the first matrix a:"
+    print *, "Enter the order of the matrix a"
     read *, rowsa, colsa
-    print *, "Enter the order of the second matrix b:"
+    print *, "Enter the order of the matrix b"
     read *, rowsb, colsb
     if (colsa == rowsb) then
         allocate(a(rowsa,colsa),b(rowsb,colsb),c(rowsa, colsb))
@@ -25,7 +25,7 @@ program matrix_multiplication
             print *, (c(i, j), j = 1, colsb)
         end do
     else
-     print *, "Multiplication is not possible. Number of columns of a must equal number of rows of b."
+     print *, "Multiplication is not possible. Number of columns of a must equal to the number of rows of b."
 
     end if
    
